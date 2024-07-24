@@ -99,3 +99,25 @@ body {
         cursor: pointer;
     }
 }
+
+.clients {
+    padding: 80px 0 130px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .h2 {
+        max-width: 530px;
+        margin-bottom: 80px;
+    }
+    
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__icon {
+    }
+}
