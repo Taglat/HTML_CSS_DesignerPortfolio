@@ -72,3 +72,30 @@ body {
     }
   }
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    height: 100vh;
+    min-height: 400px;
+    position: relative;
+
+    &__container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__btn {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: calc(50% - 20px);
+        bottom: 40px;
+        cursor: pointer;
+    }
+}
