@@ -45,3 +45,37 @@
         color: $color-text-accent;
     }
 }
+
+.h5 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 4%;
+    color: $color-text;
+    &_accent {
+        font-weight: 600;
+        color: $color-text-accent;
+        text-transform: uppercase;
+    }
+}
+
+.body__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: $color-text;
+    &_accent {
+        font-weight: 600;
+        color: $color-text-accent;
+    }
+}
+
+.button {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 4%;
+    color: $color-text-accent;
+    text-transform: uppercase;
+}
