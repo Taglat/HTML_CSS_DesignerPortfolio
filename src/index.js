@@ -1,3 +1,4 @@
+import { root } from 'postcss/lib/postcss';
 import './index.html';
 import './index.scss';
 
@@ -31,3 +32,19 @@ anchors.forEach(anchor => {
         })
     })
 })
+
+const createSelectedSection = (root) => {
+    root.querySelectorAll('.observe').forEach(s => {
+        new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    nav.querySelectorAll('a').forEach(link => link.classList.remove('active'));
+                    let id = entry.target.getAttribute('id');
+                    nav.querySelector(`a[href="#${id}"]`).classList.add('active');
+                }
+            })
+        }, {}).observe(s);
+    })
+}
+
+createSelectedSection(document.querySelector('#page'))
